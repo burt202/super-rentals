@@ -11,10 +11,6 @@ module.exports = function (environment) {
         // Here you can enable experimental features on an ember canary build
         // e.g. EMBER_NATIVE_DECORATOR_SUPPORT: true
       },
-      EXTEND_PROTOTYPES: {
-        // Prevent Ember Data from overriding Date.parse.
-        Date: false,
-      },
     },
 
     APP: {
@@ -46,6 +42,9 @@ module.exports = function (environment) {
   if (environment === 'production') {
     // here you can enable a production-specific feature
   }
+
+  ENV.MAPBOX_ACCESS_TOKEN =
+    'pk.eyJ1IjoiYWFyb24tYnVydG55ay1hbmQiLCJhIjoiY2xhdjhyMmZ3MDNhZDNwbGlpZHAzbTQyaiJ9.FNmoFdHJ20z95kIxiBDCGg';
 
   return ENV;
 };
