@@ -1,15 +1,14 @@
 <div class="rentals">
   <label>
     <span>Where would you like to stay?</span>
-    <!-- prettier-ignore -->
+    {{!-- prettier-ignore --}}
     <Input @value={{this.query}} class="light" />
   </label>
 
   <ul class="results">
-    <!-- prettier-ignore -->
+    {{!-- prettier-ignore --}}
     <Rentals::Filter @rentals={{@rentals}} @query="{{this.query}}" as |results|>
       {{#each results as |rental|}}
-      <!-- prettier-ignore -->
       <li><Rental @rental={{rental}} /></li>
       {{/each}}
     </Rentals::Filter>
