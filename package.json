@@ -11,7 +11,7 @@
     "test": "tests"
   },
   "scripts": {
-    "start": "ember serve",
+    "start": "ember serve --port 3200",
     "build": "ember build --environment=production",
     "lint": "npm run lint:hbs && npm run lint:js",
     "lint:hbs": "ember-template-lint .",
