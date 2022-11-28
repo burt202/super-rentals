@@ -20,8 +20,9 @@
     "test:unit": "ember test --filter='unit'",
     "test:integration": "ember test --filter='integration'",
     "test:acceptance": "ember test --filter='acceptance'",
+    "prettier": "prettier \"**/*.js\" --check",
     "prepare": "husky install",
-    "precommit": "npm run lint && npm run test",
+    "precommit": "npm run lint && npm run test && npm run prettier",
     "prepush": "npm run build; npm run deploy",
     "deploy": "gh-pages -d dist"
   },
